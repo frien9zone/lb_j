@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #07110f;
+  color: #eafff8;
+}
+
+.app {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 30px;
+  background: #0b1f1a;
+  border: 2px solid #00ffc8;
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(0, 255, 200, 0.35);
+}
+
+h1 {
+  text-align: center;
+  color: #39ff14;
+  text-shadow: 0 0 10px #39ff14, 0 0 20px #00ffc8;
+}
+
+.input-container {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.task-input {
+  flex: 1;
+  padding: 14px;
+  font-size: 16px;
+  background: #07110f;
+  border: 2px solid #00ffc8;
+  border-radius: 10px;
+  color: white;
+  outline: none;
+  transition: 0.3s;
+}
+
+.task-input:focus {
+  box-shadow:
+    0 0 10px #00ffc8,
+    0 0 20px #39ff14;
+}
+
+.task-input::placeholder {
+  color: #8fd3c7;
+}
+
+.add-btn {
+  padding: 14px 24px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #00ffc8, #39ff14);
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 15px #00ffc8,
+    0 0 25px #39ff14;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.task-item {
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  background: #08231d;
+  border: 1px solid #00ffc8;
+  border-radius: 10px;
+  color: #eafff8;
+  box-shadow: 0 0 12px rgba(0, 255, 200, 0.15);
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #6ee7b7;
+  opacity: 0.6;
+}
+
+.delete-btn {
+  padding: 8px 14px;
+  border: 1px solid #39ff14;
+  border-radius: 8px;
+  background: transparent;
+  color: #39ff14;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background: #39ff14;
+  color: #07110f;
+  box-shadow: 0 0 15px #39ff14;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.filter-btn {
+  padding: 10px 18px;
+  border: 1px solid #00ffc8;
+  border-radius: 8px;
+  background: transparent;
+  color: #00ffc8;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #00ffc8;
+  color: #07110f;
+  box-shadow: 0 0 15px #00ffc8;
+}
